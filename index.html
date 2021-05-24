@@ -1,0 +1,27 @@
+﻿<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Key Code Info</title>
+		
+		<link rel="stylesheet" href="styles.css">
+		<script src="scripts.js"></script>
+	</head>
+
+	<body>
+		<h1>Keycode Info</h1>
+		<p>Press a key to get its info (event type is keydown).</p>
+		<div class="data">
+			<p id="key" style="font-size: 40px; background-color: lightblue;"></p>
+			<p id="keycode" style="background-color: lightblue;"></p>
+			<p id="keylocation" style="background-color: lightblue;"></p>
+			<p id="which" style="background-color: lightblue;"></p>
+		</div>
+		<p class="code-intro">How to sense a key/s down:</p>
+		<p class="code">document.onkeydown = function(e) {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;e = e || window.event;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Add scripts here<br>}</p>
+		<p class="code-intro">How to sense a key/s up:</p>
+		<p class="code">document.onkeyup = function(e) {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;e = e || window.event;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Add scripts here<br>}</p>
+		<p class="code-intro">How to sense a key/s press:</p>
+		<p class="code">document.onkeypress = function(e) {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;e = e || window.event;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Add scripts here<br>}</p>
+	</body>
+</html>

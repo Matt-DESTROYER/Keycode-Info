@@ -1,0 +1,25 @@
+* {
+	background-color: #EAEAEA;
+	text-align: center;
+}
+
+.data {
+	background-color: lightblue;
+	height: 200px;
+	width: 90%;
+	margin: 0 auto;
+	border: 0px solid black;
+	font-size: 30px;
+}
+
+.code-intro {
+	text-align: center;
+	font-size: 20px;
+}
+
+.code {
+	padding: 10px;
+	background-color: lightgray;
+	text-align: left;
+	font-family: Consolas, 'Andale Mono', 'Lucida Console', 'Lucida Sans Typewriter', Monaco, 'Courier New', 'monospace';
+}
