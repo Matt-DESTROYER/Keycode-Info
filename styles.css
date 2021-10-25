@@ -1,9 +1,5 @@
-* {
-	background-color: #EAEAEA;
-	text-align: center;
-}
-
 .data {
+	text-align: center;
 	background-color: lightblue;
 	height: 200px;
 	width: 90%;
