@@ -9,28 +9,32 @@
 	</head>
 
 	<body>
-		<h1>Keycode Info</h1>
-		<p>Press a key to get its info (event type is keydown).</p>
-		<div class="data">
-			<p id="key" style="font-size: 40px; background-color: lightblue;"></p>
-			<p id="keycode" style="background-color: lightblue;"></p>
-			<p id="keylocation" style="background-color: lightblue;"></p>
-			<p id="which" style="background-color: lightblue;"></p>
+		<div style="background-color: #EAEAEA;">
+			<h1>Keycode Info</h1>
+			<p>Press a key to get its info (event type is keydown).</p>
+			<div class="data">
+				<p id="key" style="font-size: 40px; background-color: lightblue;"></p>
+				<p id="keycode" style="background-color: lightblue;"></p>
+				<p id="keylocation" style="background-color: lightblue;"></p>
+				<p id="which" style="background-color: lightblue;"></p>
+			</div>
 		</div>
-		<p class="code-intro">How to sense a key/s down:</p>
-		<pre class="code"><object>document</object>.<object-property>addEventListenter</object-property>(<string>"keydown"</string>, <keyword>function</keyword>(<variable>e</variable>) {
+		<div style="padding: 20px;">
+			<p class="code-intro">How to sense a key/s down:</p>
+			<pre class="code"><object>document</object>.<object-property>addEventListenter</object-property>(<string>"keydown"</string>, <keyword>function</keyword>(<variable>e</variable>) {
 	<variable>e</variable> = <variable>e</variable> || <object>window</object>.<object-property>event</object-property>;
 	<comment>// Add scripts here</comment>
 });</pre>
-		<p class="code-intro">How to sense a key/s up:</p>
-		<pre class="code"><object>document</object>.<object-property>addEventListenter</object-property>(<string>"keyup"</string>, <keyword>function</keyword>(<variable>e</variable>) {
+			<p class="code-intro">How to sense a key/s up:</p>
+			<pre class="code"><object>document</object>.<object-property>addEventListenter</object-property>(<string>"keyup"</string>, <keyword>function</keyword>(<variable>e</variable>) {
 	<variable>e</variable> = <variable>e</variable> || <object>window</object>.<object-property>event</object-property>;
 	<comment>// Add scripts here</comment>
 });</pre>
-		<p class="code-intro">How to sense a key/s press:</p>
-		<pre class="code"><object>document</object>.<object-property>addEventListenter</object-property>(<string>"keypress"</string>, <keyword>function</keyword>(<variable>e</variable>) {
+			<p class="code-intro">How to sense a key/s press:</p>
+			<pre class="code"><object>document</object>.<object-property>addEventListenter</object-property>(<string>"keypress"</string>, <keyword>function</keyword>(<variable>e</variable>) {
 	<variable>e</variable> = <variable>e</variable> || <object>window</object>.<object-property>event</object-property>;
 	<comment>// Add scripts here</comment>
 });</pre>
+		</div>
 	</body>
 </html>
