@@ -12,6 +12,11 @@
 	font-size: 30px;
 }
 
+.code {
+	background-color: #696969;
+	color: gray;
+}
+
 .code-intro {
 	text-align: center;
 	font-size: 20px;
