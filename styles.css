@@ -7,14 +7,12 @@ body {
 .data {
 	text-align: center;
 	background-color: lightblue;
-	height: 200px;
 	width: 90%;
 	margin: 0 auto;
 	border: 0px solid black;
 	border-radius: 20px;
 	font-size: 30px;
-	padding-top: 10px;
-	padding-bottom: 30px;
+	padding: 20px;
 }
 
 .code-intro {
