@@ -13,6 +13,7 @@ body {
 	border: 0px solid black;
 	border-radius: 20px;
 	font-size: 30px;
+	padding: 10px;
 }
 
 .code-intro {
