@@ -18,3 +18,19 @@ body {
 	text-align: center;
 	font-size: 20px;
 }
+
+#key {
+	font-size: 40px;
+	background-color: lightblue;
+	border-radius: 20px;
+}
+
+#keycode {
+	background-color: lightblue;
+	border-radius: 20px;
+}
+
+#keylocation {
+	background-color: lightblue;
+	border-radius: 20px;
+}
