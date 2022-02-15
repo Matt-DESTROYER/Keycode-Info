@@ -20,16 +20,22 @@
 		<pre class="code"><object>document</object>.<object-property>addEventListener</object-property>(<string>"keydown"</string>, <keyword>function</keyword>(<variable>e</variable>) {
 	<variable>e</variable> = <variable>e</variable> || <object>window</object>.<object-property>event</object-property>;
 	<comment>// Add scripts here</comment>
+	<comment>// e.keyCode - returns the keycode of the key that triggered the event</comment>
+	<comment>// e.key - returns the ASCII character of the key that triggered the event (case sensitive)</comment>
 });</pre>
 		<p class="code-intro">How to sense a key/s up:</p>
 		<pre class="code"><object>document</object>.<object-property>addEventListener</object-property>(<string>"keyup"</string>, <keyword>function</keyword>(<variable>e</variable>) {
 	<variable>e</variable> = <variable>e</variable> || <object>window</object>.<object-property>event</object-property>;
 	<comment>// Add scripts here</comment>
+	<comment>// e.keyCode - returns the keycode of the key that triggered the event</comment>
+	<comment>// e.key - returns the ASCII character of the key that triggered the event (case sensitive)</comment>
 });</pre>
 		<p class="code-intro">How to sense a key/s press:</p>
 		<pre class="code"><object>document</object>.<object-property>addEventListener</object-property>(<string>"keypress"</string>, <keyword>function</keyword>(<variable>e</variable>) {
 	<variable>e</variable> = <variable>e</variable> || <object>window</object>.<object-property>event</object-property>;
 	<comment>// Add scripts here</comment>
+	<comment>// e.keyCode - returns the keycode of the key that triggered the event</comment>
+	<comment>// e.key - returns the ASCII character of the key that triggered the event (case sensitive)</comment>
 });</pre>
 	</body>
 </html>
