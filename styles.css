@@ -36,7 +36,8 @@ body {
 	border-radius: 20px;
 }
 
-pre {	 overflow-x: auto;
+pre {
+	 overflow-x: auto;
 	 white-space: pre-wrap;
  	 white-space: -moz-pre-wrap;
 	 white-space: -pre-wrap;
