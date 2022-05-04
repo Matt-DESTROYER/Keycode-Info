@@ -11,9 +11,9 @@
 		<h1>Keycode Info</h1>
 		<p>Press a key to display information related to it.</p>
 		<div class="data">
-			<p id="key">Key: (no key pressed)</p>
-			<p id="keycode">Keycode: (no key pressed)</p>
-			<p id="keylocation">Key location: (no key pressed)</p>
+			<p>Key: <span id="key">(no key pressed)</span></p>
+			<p>Keycode: <span id="keycode">(no key pressed)</span></p>
+			<p>Key location: <span id="keylocation">(no key pressed)</span></p>
 		</div>
 		<script type="text/javascript">
 			const key_element = document.getElementById("key"),
@@ -21,9 +21,9 @@
 			      keylocation_element = document.getElementById("keylocation");
 			document.addEventListener("keydown", function (e) {
 				e = e || window.event;
-				key_element.textContent = "Key: " + e.key.toString();
-				keycode_element.textContent = "Keycode: " + e.keyCode;
-				keylocation_element.textContent = "Key location: " + e.location;
+				key_element.textContent = e.key.toString();
+				keycode_element.textContent = e.keyCode;
+				keylocation_element.textContent = e.location;
 			});
 		</script>
 		<p class="code-intro">How to sense a key/s down:</p>
