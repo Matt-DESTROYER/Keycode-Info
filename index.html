@@ -5,17 +5,24 @@
 		<title>Key Code Info</title>
 		<link rel="stylesheet" type="text/css" href="styles.css">
 		<link rel="stylesheet" type="text/css" href="https://Matt-DESTROYER.github.io/CDN/CSS/CodeBlocks/CodeBlocks.css" />
-		<script type="text/javascript" src="scripts.js"></script>
 	</head>
 
 	<body>
 		<h1>Keycode Info</h1>
-		<p>Press a key to get its info (event type is keydown).</p>
+		<p>Press a key to display information related to it.</p>
 		<div class="data">
 			<p id="key"></p>
 			<p id="keycode"></p>
 			<p id="keylocation"></p>
 		</div>
+		<script type="text/javascript">
+			document.addEventListener("keydown", function (e) {
+				e = e || window.event;
+				document.getElementById("key").textContent = "Key/Action: " + e.key;
+				document.getElementById("keycode").textContent = "Key code: " + e.keyCode;
+				document.getElementById("keylocation").textContent = "Key location: " + e.location;
+			});
+		</script>
 		<p class="code-intro">How to sense a key/s down:</p>
 		<pre class="code"><object>document</object>.<object-property>addEventListener</object-property>(<string>"keydown"</string>, <keyword>function</keyword>(<variable>e</variable>) {
 	<variable>e</variable> = <variable>e</variable> || <object>window</object>.<object-property>event</object-property>;
