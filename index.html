@@ -16,11 +16,14 @@
 			<p id="keylocation"></p>
 		</div>
 		<script type="text/javascript">
+			const key_element = document.getElementById("key"),
+			      keycode_element = document.getElementById("keycode"),
+			      keylocation_element = document.getElementById("keylocation");
 			document.addEventListener("keydown", function (e) {
 				e = e || window.event;
-				document.getElementById("key").textContent = "Key/Action: " + e.key;
-				document.getElementById("keycode").textContent = "Key code: " + e.keyCode;
-				document.getElementById("keylocation").textContent = "Key location: " + e.location;
+				key_element.textContent = "Key/Action: " + e.key.toString();
+				keycode_element.textContent = "Key code: " + e.keyCode;
+				keylocation_element.textContent = "Key location: " + e.location;
 			});
 		</script>
 		<p class="code-intro">How to sense a key/s down:</p>
