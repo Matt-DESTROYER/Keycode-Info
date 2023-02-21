@@ -48,13 +48,13 @@
 			<p>Key location: <span id="keylocation">(no key pressed)</span></p>
 		</div>
 		<script type="text/javascript">
-			const code_elementkey_element = document.getElementById("code"),
+			const code_element = document.getElementById("code"),
 				  key_element = document.getElementById("key"),
 				  keycode_element = document.getElementById("keycode"),
 				  keylocation_element = document.getElementById("keylocation");
 			document.addEventListener("keydown", function (e) {
 				e = e || window.event;
-				key_element.textContent = e.code;
+				code_element.textContent = e.code;
 				key_element.textContent = e.key.toString();
 				keycode_element.textContent = e.keyCode;
 				keylocation_element.textContent = e.location;
