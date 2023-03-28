@@ -1,85 +1,92 @@
 <!DOCTYPE html>
 <html lang="en-AU">
-	<head>
-		<meta charset="utf-8">
-		<title>Key Code Info</title>
-		<style>
-			body {
-				font-family: Trebuchet MS;
-				background-color: #EAEAEA;
-				text-align: center;
-			}
-			
-			.data {
-				text-align: center;
-				background-color: lightblue;
-				width: 90%;
-				margin: 0 auto;
-				border: 0px solid black;
-				border-radius: 20px;
-				font-size: 30px;
-				padding: 10px;
-			}
-			
-			.code-intro {
-				text-align: center;
-				font-size: 20px;
-			}
-			
-			pre {
-				overflow-x: auto;
-				white-space: pre-wrap;
-				white-space: -moz-pre-wrap;
-				white-space: -pre-wrap;
-				white-space: -o-pre-wrap;
-				word-wrap: break-word;
-			}
-		</style>
-		<link rel="stylesheet" type="text/css" href="https://Matt-DESTROYER.github.io/CDN/CSS/CodeBlocks/CodeBlocks.css" />
-	</head>
 
-	<body>
-		<h1>Keycode Info</h1>
-		<p>Press a key to display information related to it.</p>
-		<div class="data">
-			<p>Code: <span id="code">(no key pressed)</span></p>
-			<p>Key: <span id="key">(no key pressed)</span></p>
-			<p>Keycode: <span id="keycode">(no key pressed)</span></p>
-			<p>Key location: <span id="keylocation">(no key pressed)</span></p>
-		</div>
-		<script type="text/javascript">
-			const code_element = document.getElementById("code"),
-				  key_element = document.getElementById("key"),
-				  keycode_element = document.getElementById("keycode"),
-				  keylocation_element = document.getElementById("keylocation");
-			document.addEventListener("keydown", function (e) {
-				e = e || window.event;
-				code_element.textContent = e.code;
-				key_element.textContent = e.key.toString();
-				keycode_element.textContent = e.keyCode;
-				keylocation_element.textContent = e.location;
-			});
-		</script>
-		<p class="code-intro">How to detect a key/s down:</p>
-		<pre class="code"><object>document</object>.<object-property>addEventListener</object-property>(<string>"keydown"</string>, <keyword>function</keyword>(<variable>e</variable>) {
+<head>
+	<meta charset="utf-8">
+	<meta property="og:title" content="Key Code Info" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://matt-destroyer.github.io/Keycode-Info" />
+	<meta property="og:image" content="https://matt-destroyer.github.io/Keycode-Info/icon.png" />
+	<meta property="og:description" content="See information about any key key you press, and check out how to do this yourself." />
+	<title>Key Code Info</title>
+	<style>
+		body {
+			font-family: Trebuchet MS;
+			background-color: #EAEAEA;
+			text-align: center;
+		}
+
+		.data {
+			text-align: center;
+			background-color: lightblue;
+			width: 90%;
+			margin: 0 auto;
+			border: 0px solid black;
+			border-radius: 20px;
+			font-size: 30px;
+			padding: 10px;
+		}
+
+		.code-intro {
+			text-align: center;
+			font-size: 20px;
+		}
+
+		pre {
+			overflow-x: auto;
+			white-space: pre-wrap;
+			white-space: -moz-pre-wrap;
+			white-space: -pre-wrap;
+			white-space: -o-pre-wrap;
+			word-wrap: break-word;
+		}
+	</style>
+	<link rel="stylesheet" type="text/css" href="https://Matt-DESTROYER.github.io/CDN/CSS/CodeBlocks/CodeBlocks.css" />
+</head>
+
+<body>
+	<h1>Keycode Info</h1>
+	<p>Press a key to display information related to it.</p>
+	<div class="data">
+		<p>Code: <span id="code">(no key pressed)</span></p>
+		<p>Key: <span id="key">(no key pressed)</span></p>
+		<p>Keycode: <span id="keycode">(no key pressed)</span></p>
+		<p>Key location: <span id="keylocation">(no key pressed)</span></p>
+	</div>
+	<script type="text/javascript">
+		const code_element = document.getElementById("code"),
+			key_element = document.getElementById("key"),
+			keycode_element = document.getElementById("keycode"),
+			keylocation_element = document.getElementById("keylocation");
+		document.addEventListener("keydown", function (e) {
+			e = e || window.event;
+			code_element.textContent = e.code;
+			key_element.textContent = e.key.toString();
+			keycode_element.textContent = e.keyCode;
+			keylocation_element.textContent = e.location;
+		});
+	</script>
+	<p class="code-intro">How to detect a key/s down:</p>
+	<pre class="code"><object>document</object>.<object-property>addEventListener</object-property>(<string>"keydown"</string>, <keyword>function</keyword>(<variable>e</variable>) {
 	<variable>e</variable> = <variable>e</variable> || <object>window</object>.<object-property>event</object-property>;
 	<comment>// Add scripts here</comment>
 	<variable>e</variable>.<object-property>keyCode</object-property>;        <comment>// -> returns the keycode of the key that triggered the event</comment>
 	<variable>e</variable>.<object-property>key</object-property>.<object-property>toString</object-property>(); <comment>// -> returns the ASCII character of the key that triggered the event</comment>
 });</pre>
-		<p class="code-intro">How to detect a key/s up:</p>
-		<pre class="code"><object>document</object>.<object-property>addEventListener</object-property>(<string>"keyup"</string>, <keyword>function</keyword>(<variable>e</variable>) {
+	<p class="code-intro">How to detect a key/s up:</p>
+	<pre class="code"><object>document</object>.<object-property>addEventListener</object-property>(<string>"keyup"</string>, <keyword>function</keyword>(<variable>e</variable>) {
 	<variable>e</variable> = <variable>e</variable> || <object>window</object>.<object-property>event</object-property>;
 	<comment>// Add scripts here</comment>
 	<variable>e</variable>.<object-property>keyCode</object-property>;        <comment>// -> returns the keycode of the key that triggered the event</comment>
 	<variable>e</variable>.<object-property>key</object-property>.<object-property>toString</object-property>(); <comment>// -> returns the ASCII character of the key that triggered the event</comment>
 });</pre>
-		<p class="code-intro">How to detect a key/s press:</p>
-		<pre class="code"><object>document</object>.<object-property>addEventListener</object-property>(<string>"keypress"</string>, <keyword>function</keyword>(<variable>e</variable>) {
+	<p class="code-intro">How to detect a key/s press:</p>
+	<pre class="code"><object>document</object>.<object-property>addEventListener</object-property>(<string>"keypress"</string>, <keyword>function</keyword>(<variable>e</variable>) {
 	<variable>e</variable> = <variable>e</variable> || <object>window</object>.<object-property>event</object-property>;
 	<comment>// Add scripts here</comment>
 	<variable>e</variable>.<object-property>keyCode</object-property>;        <comment>// -> returns the keycode of the key that triggered the event</comment>
 	<variable>e</variable>.<object-property>key</object-property>.<object-property>toString</object-property>(); <comment>// -> returns the ASCII character of the key that triggered the event</comment>
 });</pre>
-	</body>
+</body>
+
 </html>
